@@ -1,0 +1,65 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+canvas, img {
+  background: #000;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+svg g.rotate polyline{
+  animation-duration: 5s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* animation-direction: alternate; */
+  /* transform-origin: center; */
+}
+svg g.scale polyline{
+  animation-duration: 5s;
+  animation-name: scale;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* animation-direction: alternate; */
+  /* transform-origin: center; */
+}
+
+@keyframes rotate {
+  0%{
+    transform:rotate(0deg);
+  }
+  10%{
+    transform: rotate((10deg));
+  }
+  60%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform:rotate(360deg)
+  }
+}
+@keyframes scale {
+  0%{
+    transform:scaleY(1);
+  }
+  10%{
+    transform: scaleY(1);
+  }
+  60%{
+    transform: scaleY(-1);
+  }
+  100%{
+    transform:scaleY(1);
+  }
+}

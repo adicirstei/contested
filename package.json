@@ -1,0 +1,29 @@
+{
+  "name": "contested",
+  "version": "1.0.0",
+  "description": "Contested works on fxhash",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./config/webpack.config.prod.js --entry",
+    "start": "webpack serve --config ./config/webpack.config.dev.js",
+    "serve": "webpack serve --config ./config/webpack.config.dev.js --entry"
+  },
+
+  "devDependencies": {
+    "adm-zip": "^0.5.9",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.4.0",
+    "html-webpack-plugin": "^5.4.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.59.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "@liamegan1/fxhash-helpers": "^0.0.9",
+    "clamp": "^1.0.1",
+    "lerp": "^1.0.3"
+  },
+
+  "author": "adicirstei"
+}
